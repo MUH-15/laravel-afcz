@@ -48,7 +48,7 @@ Home
             <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
                 @if ($post->image)
                 <img src="{{ asset('images/posts/' . $post->image) }}" class="d-block w-100"
-                    style="width: 800px; height: 400px; object-fit: cover;" alt="{{ $post->title }}">
+                    style="width: 400px; height: 400px; object-fit: cover;" alt="{{ $post->title }}">
                 @else
                 <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Placeholder Image">
                 @endif
@@ -69,7 +69,7 @@ Home
 
     <div class="row mt-4">
         @foreach ($posts as $post)
-        <div class="col-md-4 mb-4">
+        <div class="col-md-3 mb-4">
             <div class="card shadow">
                 @if ($post->image)
                 <img src="{{ asset('images/posts/' . $post->image) }}" class="card-img-top" alt="{{ $post->title }}">
