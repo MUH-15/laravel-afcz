@@ -7,7 +7,20 @@ Home
 
 
 @section('content')
-<div class="container my-[100px]" style="margin-top: 100px; margin-bottom: 100px;">
+<div class="container" style="padding-top: 100px;">
+    <h1 class="text-center">Welcome to BeeLiquid</h1>
+    <p class="text-center">Your ultimate destination for premium vaping products!</p>
+
+    <!-- Promotional Banner -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="alert alert-info text-center">
+                <strong>Special Offer!</strong> Get 20% off on your first order with code: FIRST20
+            </div>
+        </div>
+    </div>
+
+<div>
     <div class="row">
         <div class="col-md-12">
             @if (session('success'))
@@ -27,12 +40,8 @@ Home
             </div>
             @endif
 
-            <h1 class="text-center mb-5">Pick your outfit!</h1>
-        </div>
-    </div>
 
-
-    <div id="carouselExampleAutoplaying" class="carousel slide shadow rounded-2 border border-dark"
+    <div id="carouselExampleAutoplaying" class="carousel slide shadow rounded-2"
         data-bs-ride="carousel">
         <div class="carousel-inner rounded-2">
             @foreach ($posts as $key => $post)
